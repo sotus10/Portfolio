@@ -1,9 +1,34 @@
-
-body {
-    background-color: black;
-    color: white;
+* {
+    padding: 0;
+    margin:0;
 }
 
-strong {
-    color: aqua;
+body{
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: #000000;
+    color: #F6F6F6;
+}
+
+.titulo-destaque {
+    color: #22D4FD; ;
+}
+
+.presentacion {
+    display: flex;
+    align-items: center;
+    margin: 10%;
+    justify-content: space-between;
+}
+
+.presentacion__contenido {
+    width: 615px;
+}
+
+.presentacion__contenido__titulo {
+    font-size: 36px;
+}
+
+.presentacion__contenido_texto {
+    font-size: 24px;
 }
