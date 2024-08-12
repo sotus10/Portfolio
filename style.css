@@ -25,6 +25,9 @@ body{
 
 .presentacion__contenido {
     width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
 }
 
 .presentacion__contenido__titulo {
@@ -48,4 +51,17 @@ body{
     background-color: #22D4FD;
     text-align: center;
     padding: 21.5px 0;
+    border-radius: 16px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: none;
+    color:#000000;
+    transition: 0.3s ease;
+}
+
+.presentacion_enlaces_link:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    transform: scale(1.05);
 }
