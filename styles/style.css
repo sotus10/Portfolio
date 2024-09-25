@@ -23,20 +23,25 @@ body{
 }
 
 .header{
-    padding: 2% 0% 2% 15%;
+    padding: 2% 0% 2% 6%;
     background-color: var(--color-cuarto);
 }
 
 .header__menu{
     display: flex;
     gap: 80px;
+    align-items: center;
+}
+
+.header__menu__logo {
+    width: 150px;
 }
 
 .header__menu__link{
     font-family: var(--fuente-monserrat);
     font-size: 1.5rem;
     font-weight: 600;
-    color: var(--color-terciario);
+    color: var(--color-secundario);
     text-decoration: none;
     padding: 6px;
     transition: 0.3s ease;
@@ -46,6 +51,7 @@ body{
     cursor: pointer;
     text-decoration: underline;
     color: var(--color-terciario);
+
 }
 
 .presentacion {
