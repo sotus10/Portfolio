@@ -12,13 +12,20 @@
 <body>
     <header class="header">
         <nav class="header__menu">
-            <img src="assets/logo.png" alt="LogoBeatScript" class="header__menu__logo" href="index.html">
-            <a class="header__menu__link" href="index.html">Home</a>
-            <a class="header__menu__link" href="about.html">Sobre mí</a>
-            <a class="header__menu__link" href="skills.html">Skills</a>
+            <img src="assets/logo.png" alt="LogoBeatScript" class="header__menu__logo" href=".presentacion">
+            <a class="header__menu__link" href="#SobreMi">Sobre mí</a>
+            <a class="header__menu__link" href="#SoftSkills">Soft Skills</a>
+            <a class="header__menu__link" href="#HardSkills">Hard Skills</a>
+            <a class="header__menu__link" href="#Contacto">Contacto</a>
         </nav>
     </header>
+    <section >
+        <div class="typewriter-container">
+            <h2 id="typewriter">“Hay una fuerza motriz más poderosa que el vapor, la electricidad y la energía atómica: la voluntad“</h2>
+        </div>
+    </section>
     <main class="presentacion">
+
         <section class="presentacion__contenido">
 
             <h1 class="presentacion__contenido__titulo">Eleva tu negocio digital a otro nivel <strong class="titulo-destaque">con un Front-end de calidad!</strong></h1>
@@ -41,10 +48,40 @@
     </main>
 
     <footer class="footer">
-        <p>Desarrollado por Alura Latam</p>
+        <p>Desarrollado por Juan Diego Soto</p>
     </footer>
 </body>
 <script>
   document.body.style.zoom = "80%";
+
+    const text = "“Hay una fuerza motriz más poderosa que el vapor, la electricidad y la energía atómica: la voluntad“";
+    let index = 0;
+    let isDeleting = false;
+    let speed = 100; // Velocidad de escritura
+
+    function typeWriter() {
+    const element = document.getElementById("typewriter");
+    let currentText = text.substring(0, index);
+
+    element.innerHTML = currentText;
+
+    if (!isDeleting && index < text.length) {
+        index++;
+        speed = 100; // Velocidad de escritura normal
+    } else if (isDeleting && index > 0) {
+        index--;
+        speed = 50; // Velocidad de borrado
+    } else if (index === text.length) {
+        isDeleting = true; // Comienza a borrar
+        speed = 2000; // Pausa antes de borrar
+    } else if (index === 0) {
+        isDeleting = false; // Comienza a escribir de nuevo
+    }
+
+    setTimeout(typeWriter, speed);
+    }
+
+    window.onload = typeWriter;
+
 </script>
 </html>
