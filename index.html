@@ -19,69 +19,46 @@
             <a class="header__menu__link" href="#Contacto">Contacto</a>
         </nav>
     </header>
-    <section >
-        <div class="typewriter-container">
-            <h2 id="linea1">"Hay una fuerza motriz más poderosa que el vapor, la electricidad</h2>
-            <h2 id="linea2">y la energía atómica: la voluntad"</h2>
-        </div>
-    </section>
-    <main class="presentacion">
 
-        <section class="presentacion__contenido">
+    <main >
+        <section class="presentacion">
+            <section class="presentacion__contenido">
 
-            <h1 class="presentacion__contenido__titulo">Desarrollo <strong class="titulo-destaque">soluciones digitales</strong> mientras persigo mis hobbies por la <strong class="titulo-destaque">música y la narrativa.</strong></h1>
+                <h1 class="presentacion__contenido__titulo">Desarrollo <strong class="titulo-destaque">soluciones digitales</strong> mientras persigo mis hobbies por la <strong class="titulo-destaque">música y la narrativa.</strong></h1>
 
-                <p class="presentacion__contenido__texto">
-                    Soy Juan Diego, programador junior con un año y medio de experiencia en desarrollo frontend. Mis habilidades interpersonales me han ayudado a crecer en esta etapa de mi carrera. Además, tengo un gran conocimiento de música, que es uno de mis hobbies. Actualmente, estoy escribiendo un libro con unos amigos, y el desarrollo de un videojuego basado en esta historia es una de mis metas a corto plazo.
-                </p>
-                <div class="presentacion__enlaces">
-                    <h2 class="presentacion__enlaces__subtitulo">Accede a mis redes</h2>
+                    <p class="presentacion__contenido__texto">
+                        Soy Juan Diego, programador junior con un año y medio de experiencia en desarrollo frontend. He mejorado mis habilidades gracias a ONE de Oracle y Alura Latam. También tengo conocimientos en Excel y PowerPoint, así como experiencia en servicio al cliente.
+                    </p>
+                    <div class="presentacion__enlaces">
+                        <h2 class="presentacion__enlaces__subtitulo">Accede a mis redes</h2>
 
-                    <a class="presentacion__enlaces__link" href="https://github.com/sotus10" target="_blank"><img >Github</a>
+                        <a class="presentacion__enlaces__link" href="https://github.com/sotus10" target="_blank"><img >Github</a>
 
-                    <a class="presentacion__enlaces__link" href="https://linkedin.com/in/" target="_blank"><img >Linkedin</a>
+                        <a class="presentacion__enlaces__link" href="https://linkedin.com/in/" target="_blank"><img >Linkedin</a>
 
-                </div>
-               
-        </section>
+                    </div>
+                
+            </section>
             <img class="presentacion__imagen" src="./assets/FotoJuanDiego.png" alt="Foto de Juan Diego ">
+        </section>
+        <section id="SobreMi">
+            <h1 class="presentacion__contenido__titulo">Sobre <strong class="titulo-destaque">Mí</strong></h1>
+            <p class="SobreMi__parrafo_1">
+                ¡Hola! Soy Juan Diego Soto, un apasionado de la tecnología y el desarrollo web. Desde que empecé a explorar el mundo del código, me he dado cuenta de que es una herramienta poderosa para crear y mejorar ideas. Aunque algunos podrían pensar que soy joven, eso no ha sido un límite para mí. El programa ONE de Oracle y Alura LATAM me ha ayudado a avanzar mucho en mi aprendizaje, dándome las bases necesarias para seguir creciendo en este camino.
+            </p>
+            <p class="SobreMi__parrafo_2">
+                Me gusta trabajar con herramientas como Excel y PowerPoint, y también tengo experiencia en ventas por internet, sobre todo en el área de servicio al cliente, donde he aprendido a entender mejor las necesidades de los demás.
+            </p>
+            <p class="SobreMi__parrafo_3">
+                En mi tiempo libre, me encanta tocar música, y creo que siempre hay algo nuevo por descubrir, tanto en la tecnología como en mis pasiones personales. Estoy listo para enfrentar nuevos desafíos y seguir mejorando cada día. ¿Hablamos?
+            </p>
+        </section>
+
     </main>
 
     <footer class="footer">
-        <p>Desarrollado por Juan Diego Soto</p>
+        <p >Desarrollado por Juan Diego Soto</p>
     </footer>
 </body>
-<script>
-  document.body.style.zoom = "80%";
 
-    const text = "“Hay una fuerza motriz más poderosa que el vapor, la electricidad y la energía atómica: la voluntad“";
-    let index = 0;
-    let isDeleting = false;
-    let speed = 100; // Velocidad de escritura
-
-    function typeWriter() {
-    const element = document.getElementById("typewriter");
-    let currentText = text.substring(0, index);
-
-    element.innerHTML = currentText;
-
-    if (!isDeleting && index < text.length) {
-        index++;
-        speed = 100; // Velocidad de escritura normal
-    } else if (isDeleting && index > 0) {
-        index--;
-        speed = 50; // Velocidad de borrado
-    } else if (index === text.length) {
-        isDeleting = true; // Comienza a borrar
-        speed = 2000; // Pausa antes de borrar
-    } else if (index === 0) {
-        isDeleting = false; // Comienza a escribir de nuevo
-    }
-
-    setTimeout(typeWriter, speed);
-    }
-
-    window.onload = typeWriter;
-
-</script>
 </html>
