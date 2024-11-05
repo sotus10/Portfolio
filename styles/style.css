@@ -134,6 +134,18 @@ body{
 
 }
 
+.SobreMi {
+    display: flex;
+    
+}
+
+.SobreMi__parrafo_1 {
+    font-size: 1.25rem;
+    font-family: var(--fuente-monserrat);
+    display: flex;
+    
+}
+
 .footer{
     color: var(--color-primario);
     background-color: var(--color-terciario);
