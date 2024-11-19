@@ -22,6 +22,8 @@ body{
     color: var(--color-secundario);
 }
 
+/*header*/
+
 .header{
     padding: 2% 0% 2% 6%;
     background-color: var(--color-cuarto);
@@ -58,6 +60,8 @@ body{
     text-decoration: underline;
     color: var(--color-terciario);
 }
+
+/*presentacion*/
 
 .presentacion {
     padding: 5% 15%;
@@ -124,15 +128,25 @@ body{
 
 .presentacion__enlaces__link:hover{
     cursor: pointer;
-    font-size: 26px; /* Aumenta el tamaño de la fuente */
+    font-size: 26px; 
     text-decoration: underline;
-    transform: scale(1.03); /* Escala un poco el texto */
+    transform: scale(1.03); 
 }
 
 .presentacion__imagen {
     width: 50%;
 
 }
+
+/*Sobre mí*/
+
+#SobreMi {
+    background-color: var(--color-terciario);
+    display: flex;
+    flex-direction: column;
+}
+
+/*Footer*/
 
 .footer{
     color: var(--color-primario);
