@@ -138,16 +138,6 @@ body{
 
 }
 
-/*Sobre mí*/
-
-#SobreMi {
-    background-color: var(--color-terciario);
-    display: flex;
-    flex-direction: column;
-}
-
-/*Footer*/
-
 .footer{
     color: var(--color-primario);
     background-color: var(--color-terciario);
